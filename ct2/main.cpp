@@ -6,9 +6,15 @@
 //
 
 #include <iostream>
+#include <string>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+int main() {
+    std::string lastName;
+    
+    //NUM - change to loop i
+    std::cout << "Enter Patient NUM's Last Name: ";
+    std::getline(std::cin, lastName);
+    
+    std::cout << "You Entered: " << lastName << std::endl;
     return 0;
 }
