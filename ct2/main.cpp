@@ -7,21 +7,28 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
 
 int main() {
     std::string lastName;
-    std::string fullName;
+    int numPatients = 2;
+    //std::string fullName;
     
-    for (int i = 1; i<=2; ++i) {
+    std::vector<std::string> fullName(numPatients);
+    //std::vector<std::string> fullName(2);
+    
+    for (int i = 0; i<numPatients; ++i) {
+    //for (int i = 1; i<=2; ++i) {
         //NUM - change to loop i
         std::cout << "Enter Patient NUM's Last Name: ";
         std::getline(std::cin, lastName);
-        std::string fullName = lastName;
+        fullName[i] = lastName;
     }
     
     
-    for (int i = 1; i<=2; ++i) {
-        std::cout << "You Entered: " << fullName << std::endl;
+    //for (int i = 1; i<=2; ++i) {
+    for (int i = 0; i<numPatients; ++i) {
+        std::cout << "You Entered: " << fullName[i] << std::endl;
     }
      
     
