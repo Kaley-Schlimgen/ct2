@@ -10,11 +10,20 @@
 
 int main() {
     std::string lastName;
+    std::string fullName;
     
-    //NUM - change to loop i
-    std::cout << "Enter Patient NUM's Last Name: ";
-    std::getline(std::cin, lastName);
+    for (int i = 1; i<=2; ++i) {
+        //NUM - change to loop i
+        std::cout << "Enter Patient NUM's Last Name: ";
+        std::getline(std::cin, lastName);
+        std::string fullName = lastName;
+    }
     
-    std::cout << "You Entered: " << lastName << std::endl;
+    
+    for (int i = 1; i<=2; ++i) {
+        std::cout << "You Entered: " << fullName << std::endl;
+    }
+     
+    
     return 0;
 }
