@@ -14,23 +14,23 @@ int main() {
     char firstWord[200] = "";
     char secondWord[200] = "";
     
-//FIXME change to 3
-    //numPatients is 3
-    int numPatients = 2;
+    int numWords = 3;
     
-    //create vector so we can get and print the user's input using a for loop
+    std::cout <<"BUILDING COMPOUND WORDS\n";
     
-    //get two string user inputs 3 (numPatients = 3) times
-    for (int i = 0; i < numPatients; ++i) {
+    //get two string user inputs, numWords times
+    for (int i = 0; i < numWords; ++i) {
+        std::cout << "\nWORD #" << i + 1;
+        
         //take two string inputs from user
-        std::cout << "Enter compound word " << i + 1 << "'s first word: ";
+        std::cout << "\nEnter First Word of Compound Word #" << i + 1 << ": ";
         std::cin.getline(firstWord, 200);
         
-        std::cout << "Enter compound word " << i + 1 << "'s second word: ";
+        std::cout << "Enter Second Word of Compound Word #" << i + 1 << ": ";
         std::cin.getline(secondWord, 200);
         
         std::strcat(firstWord, secondWord);
-        std::cout << "Compound Word " << i + 1 << ": " << firstWord << std::endl;
+        std::cout << "Your Compound Word is: " << firstWord << std::endl;
         
     }
     
